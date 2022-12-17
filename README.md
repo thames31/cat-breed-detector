@@ -18,7 +18,7 @@ Manual cleaning for the photos was also carried out because some photos were dup
 
 Here are the few images used for training the model: 
 
-![Sample image of cats](assets\cat_sample.png)
+![Sample image of cats](assets/cat_sample.png)
 
 # Designing the convolutional neural network
 
@@ -53,9 +53,9 @@ model.compile(
 
 Here is the graph for both the loss and accuracy function :
 
-![Loss over epochs](assets\cats9loss.png)
+![Loss over epochs](assets/cats9loss.png)
 
-![Accuracy over epochs](assets\cats9acc.png)
+![Accuracy over epochs](assets/cats9acc.png)
 
 The validation loss function follows a similar decreasing trend to the training loss. Same thing can be observed on the accuracy graph as the validation also follows a similar increasing trend to the training accuracy. These metrics confirms that the model does a decent job at detecting cat breeds. 
 
@@ -65,9 +65,9 @@ We can now test out the model by predicting on unknown data.
 
 Here are the predictions for both Abyssinian and Chartreux cat breeds:
 
-![Abyssian predicted correclty with 75.89% confidence](assets\abys_predict_result.png)
+![Abyssian predicted correclty with 75.89% confidence](assets/abys_predict_result.png)
 
-![Abyssian predicted correclty with 59.05% confidence](assets\chtrx_predict_result.png)
+![Abyssian predicted correclty with 59.05% confidence](assets/chtrx_predict_result.png)
 
 It seems our model works quite well!
 
