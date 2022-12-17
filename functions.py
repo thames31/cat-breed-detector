@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+import tensorflow as tf
+import numpy as np
 
 def plotsave_accuracy(history, fname):
     '''
@@ -36,3 +38,17 @@ def plotsave_loss(history, fname):
     plt.xlabel('Epochs')
     plt.legend(['train', 'validation'], loc='upper left')
     plt.savefig('assets/' + fname, transparent = False)
+
+def predict_breed(img_dir, model, IMG_HEIGHT, IMG_WIDTH, class_names):
+    '''
+    Converts and predicts and image file with the 
+    corresponding model
+
+    '''
+    img = tf.keras.utils.load_img(img_dir, target_size=(IMG_HEIGHT, IMG_WIDTH))
+    img_array = tf.keras.utils.img_to_array(img)
+    img_array = tf.expand_dims(img_array, 0)
+
+    predictions = model.predict(img_array)
+    score = tf.nn.softmax(predictions[0])
+    print(f"This cat breed is : {class_names[np.argmax(score)]} with {np.max(score) * 100:.2f} % confidence")
