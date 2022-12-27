@@ -1,6 +1,6 @@
 # Information 
 
-The goal of this project is to a CNN (convolutional neural network) that can detect different breeds of cats. CNN is a type of Deep Learning neural network specifically used for image classification. The trained model could be useful if you encounter a random cat and you would like to identify its breed. 
+The goal of this project is to build a CNN (convolutional neural network) that can detect different breeds of cats. CNN is a type of Deep Learning neural network specifically used for image classification. The trained model could be useful if you encounter a random cat and you would like to identify its breed. 
 
 Presently, the model is trained on only 9 cat breeds but
 
